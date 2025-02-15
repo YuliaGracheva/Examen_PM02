@@ -55,11 +55,11 @@ namespace ExamApp
         {
             if (prev[endPoint] == -1)
             {
-                Console.WriteLine("Нет доступного пути.");
+                Console.WriteLine("РќРµС‚ РґРѕСЃС‚СѓРїРЅРѕРіРѕ РїСѓС‚Рё.");
                 return;
             }
 
-            Console.Write("Путь: ");
+            Console.Write("РџСѓС‚СЊ: ");
             var path = new List<int>();
 
             for (int at = endPoint; at != -1; at = prev[at])
