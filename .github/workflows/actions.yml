@@ -1,35 +1,33 @@
-   name: CI
+name: CI
 
-   on:
-     push:
-       branches:
-         - main  # Запускать при пушах в основную ветку
-     pull_request:  # Запускать при создании Pull Request
-       branches:
-         - main
+on:
+  push:
+    branches:
+      - main  
+  pull_request: 
+    branches:
+      - main
 
-   jobs:
-     build:
-       runs-on: ubuntu-latest  
+jobs:
+  build:
+    runs-on: ubuntu-latest  
 
-       steps:
-         - name: Checkout code
-           uses: actions/checkout@v2 
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2 
 
-         - name: Set up .NET
-           uses: actions/setup-dotnet@v1
-           with:
-             dotnet-version: '8.0.x' 
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0.x' 
 
-         - name: Restore dependencies
-           run: dotnet restore ./src/ExamApp/ExamApp/ExamApp.csproj
+      - name: Restore dependencies
+        run: dotnet restore ./src/ExamApp/ExamApp/ExamApp.csproj
 
-         - name: Build
-           run: dotnet build ./src/ExamApp/ExamApp/ExamApp.csproj --configuration Release 
+      - name: Build projects
+        run: |
+          dotnet build ./src/ExamApp/ExamApp/ExamApp.csproj --configuration Release
+          dotnet build ./test/TestProject1/TestProject1.csproj --configuration Release
 
-         - name: Build test project
-           run: dotnet build ./test/TestProject1/TestProject1.csproj --configuration Release
-
-         - name: Run tests
-           run: dotnet test ./test/TestProject1/TestProject1.csproj --configuration Release --no-build --verbosity normal  
-   
+      - name: Run tests
+        run: dotnet test ./test/TestProject1/TestProject1.csproj --configuration Release --no-build --verbosity normal  
