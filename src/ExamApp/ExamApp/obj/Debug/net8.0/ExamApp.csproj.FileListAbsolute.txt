@@ -1,0 +1,14 @@
+C:\Examen_PM02\src\ExamApp\ExamApp\bin\Debug\net8.0\ExamApp.exe
+C:\Examen_PM02\src\ExamApp\ExamApp\bin\Debug\net8.0\ExamApp.deps.json
+C:\Examen_PM02\src\ExamApp\ExamApp\bin\Debug\net8.0\ExamApp.runtimeconfig.json
+C:\Examen_PM02\src\ExamApp\ExamApp\bin\Debug\net8.0\ExamApp.dll
+C:\Examen_PM02\src\ExamApp\ExamApp\bin\Debug\net8.0\ExamApp.pdb
+C:\Examen_PM02\src\ExamApp\ExamApp\obj\Debug\net8.0\ExamApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Examen_PM02\src\ExamApp\ExamApp\obj\Debug\net8.0\ExamApp.AssemblyInfoInputs.cache
+C:\Examen_PM02\src\ExamApp\ExamApp\obj\Debug\net8.0\ExamApp.AssemblyInfo.cs
+C:\Examen_PM02\src\ExamApp\ExamApp\obj\Debug\net8.0\ExamApp.csproj.CoreCompileInputs.cache
+C:\Examen_PM02\src\ExamApp\ExamApp\obj\Debug\net8.0\ExamApp.dll
+C:\Examen_PM02\src\ExamApp\ExamApp\obj\Debug\net8.0\refint\ExamApp.dll
+C:\Examen_PM02\src\ExamApp\ExamApp\obj\Debug\net8.0\ExamApp.pdb
+C:\Examen_PM02\src\ExamApp\ExamApp\obj\Debug\net8.0\ExamApp.genruntimeconfig.cache
+C:\Examen_PM02\src\ExamApp\ExamApp\obj\Debug\net8.0\ref\ExamApp.dll
