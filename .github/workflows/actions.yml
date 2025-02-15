@@ -23,7 +23,7 @@
 
          - name: Restore dependencies
            run: |
-             cd ./src/ExamApp
+             cd ./src/ExamApp/ExamApp
              dotnet restore ExamApp.csproj
 
 
